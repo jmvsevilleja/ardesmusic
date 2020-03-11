@@ -1,0 +1,23 @@
+.ischool_area {
+  background: $heading_color3;
+  padding: 50px 0;
+  h3 {
+    color: #fff;
+  }
+  h4 {
+    margin-top: 5px;
+    color: $heading_color;
+  }
+  p {
+    color: $theme-color;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  a {
+    color: $heading_color4;
+    &:hover {
+      background: transparent;
+      color: #fff;
+    }
+  }
+}

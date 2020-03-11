@@ -1,0 +1,66 @@
+.instruments_area {
+  background-image: url(../img/banner/back05.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 67px 0;
+
+  @media #{$mobile_device} {
+    padding: 60px 0;
+  }
+  .single_school {
+    background: #fff;
+    @include border-radius(5px);
+    overflow: hidden;
+    @include transition(0.3s);
+    margin-bottom: 30px;
+    .icon {
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    .place_info {
+      padding: 27px 15px 25px 15px;
+      h3 {
+        font-size: 22px;
+        font-weight: 400;
+        color: #040e27;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        @include transition(0.3s);
+      }
+      p {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #7a838b;
+        margin-top: 2px;
+        margin-bottom: 7px;
+        line-height: 23px;
+      }
+      li {
+        font-size: 0.9rem;
+        list-style-type: circle;
+        margin-left: 20px;
+        color: #7a838b;
+      }
+    }
+    &:hover {
+      @include box-shadow(0 10px 20px rgba(0, 0, 0, 0.05));
+      .place_info {
+        h3 {
+          color: #ff4a52;
+        }
+      }
+      .thumb {
+        .prise {
+          background: #ff4a52;
+        }
+      }
+    }
+    &:hover {
+      @include transform(translateY(-10px));
+    }
+  }
+}

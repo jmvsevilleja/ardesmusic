@@ -1,0 +1,23 @@
+.popular_school_area {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  @media #{$mobile_device} {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  h1 {
+    line-height: 70px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .thumb {
+    position: relative;
+    overflow: hidden;
+    // margin-top: 80px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

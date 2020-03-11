@@ -1,0 +1,76 @@
+.instructors_area {
+  background-image: url(../img/banner/back03.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @media #{$mobile_device} {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  // .section_title h3 {
+  //   color: #0160ad;
+  // }
+  // .section_title h4 {
+  //   color: #fb9e3e;
+  // }
+  .single_place {
+    .thumb {
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    .instructor_info {
+      h3 {
+        font-size: 22px;
+        font-weight: 400;
+        color: #fff;
+        margin-top: 10px;
+        margin-bottom: 0;
+        text-align: center;
+        @include transition(0.3s);
+      }
+      p {
+        text-align: center;
+        font-weight: 400;
+        color: #7a838b;
+        margin-top: 2px;
+        margin-bottom: 7px;
+        strong {
+          font-weight: 500;
+        }
+      }
+      li {
+        list-style-type: circle;
+        margin-left: 30px;
+        color: #7a838b;
+      }
+    }
+  }
+  .owl-carousel .owl-nav div {
+    font-size: 20px;
+    color: #fff;
+    border: 0;
+    &.owl-prev {
+      left: -80px;
+      right: auto;
+    }
+
+    &.owl-next {
+      right: -80px;
+      left: auto;
+    }
+    &:hover {
+      color: $btn_hover;
+      background: none;
+      border: none;
+    }
+  }
+  .more_place_btn {
+    margin-top: 40px;
+  }
+}
