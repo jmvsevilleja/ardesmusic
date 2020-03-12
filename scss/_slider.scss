@@ -56,6 +56,9 @@
     @media #{$mid_device} {
       height: 480px;
     }
+    @media #{$large_device} {
+      height: 580px;
+    }
     .slider_text {
       @media #{$mobile_device} {
         margin: 100px 0 50px 0;

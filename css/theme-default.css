@@ -1,5 +1,6 @@
 /* 1. Theme default css */
 @import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
 /* Normal desktop :1200px. */
 /* Normal desktop :992px. */
 /* Tablet desktop :768px. */
@@ -25,7 +26,7 @@ body {
 
 a,
 .button {
-  color: #84142d;
+  color: #3c0003;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -47,7 +48,7 @@ a:focus,
 a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
-  color: #84142d;
+  color: #3c0003;
   text-decoration: none;
 }
 
