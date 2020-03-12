@@ -103,13 +103,16 @@
       nav: true,
       responsive: {
         0: {
-          items: 1
+          items: 1,
+          nav: true
         },
         800: {
-          items: 3
+          items: 3,
+          nav: true
         },
         1000: {
-          items: 4
+          items: 4,
+          nav: true
         }
       },
       navText: [

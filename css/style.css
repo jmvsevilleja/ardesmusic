@@ -1370,11 +1370,11 @@ h3 {
   border: 0;
 }
 .instructors_area .owl-carousel .owl-nav div.owl-prev {
-  left: -80px;
+  left: -20px;
   right: auto;
 }
 .instructors_area .owl-carousel .owl-nav div.owl-next {
-  right: -80px;
+  right: -20px;
   left: auto;
 }
 .instructors_area .owl-carousel .owl-nav div:hover {
