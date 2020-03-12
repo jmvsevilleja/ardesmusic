@@ -15,7 +15,7 @@
       padding: 27px 15px 25px 15px;
       img {
         display: block;
-        margin: 0 0 20px;
+        margin: 0 auto 20px;
       }
       h3 {
         font-size: 22px;
@@ -23,6 +23,7 @@
         color: #040e27;
         margin-bottom: 10px;
         @include transition(0.3s);
+        text-align: center;
       }
       p {
         font-size: 0.9rem;

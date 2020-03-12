@@ -1370,11 +1370,11 @@ h3 {
   border: 0;
 }
 .instructors_area .owl-carousel .owl-nav div.owl-prev {
-  left: -20px;
+  left: -15px;
   right: auto;
 }
 .instructors_area .owl-carousel .owl-nav div.owl-next {
-  right: -20px;
+  right: -15px;
   left: auto;
 }
 .instructors_area .owl-carousel .owl-nav div:hover {
@@ -2081,7 +2081,7 @@ h3 {
 }
 .school_places_area .single_place .place_info img {
   display: block;
-  margin: 0 0 20px;
+  margin: 0 auto 20px;
 }
 .school_places_area .single_place .place_info h3 {
   font-size: 22px;
@@ -2092,6 +2092,7 @@ h3 {
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  text-align: center;
 }
 .school_places_area .single_place .place_info p {
   font-size: 0.9rem;
