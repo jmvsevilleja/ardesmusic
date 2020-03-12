@@ -1327,7 +1327,8 @@ h3 {
   overflow: hidden;
 }
 .instructors_area .single_place .thumb img {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
 }
 .instructors_area .single_place .instructor_info h3 {
   font-size: 22px;
