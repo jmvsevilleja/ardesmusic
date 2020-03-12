@@ -1452,6 +1452,9 @@ h3 {
     margin-bottom: 20px;
   }
 }
+.footer .footer_top .footer_widget .footer_logo img {
+  width: 100%;
+}
 .footer .footer_top .footer_widget p {
   font-size: 0.9rem;
   font-weight: 400;
@@ -1982,6 +1985,7 @@ h3 {
 }
 .popular_school_area .thumb img {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .instruments_area {

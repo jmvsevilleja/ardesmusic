@@ -54,6 +54,9 @@
         @media #{$mobile_device} {
           margin-bottom: 20px;
         }
+        img {
+          width: 100%;
+        }
       }
       p {
         font-size: 0.9rem;
