@@ -2086,6 +2086,7 @@ h3 {
 .school_places_area .single_place .place_info img {
   display: block;
   margin: 0 auto 20px;
+  width: 70px;
 }
 .school_places_area .single_place .place_info h3 {
   font-size: 22px;
