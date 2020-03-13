@@ -990,7 +990,7 @@ h3 {
 }
 @media (max-width: 767px) {
   .slider_area .single_slider {
-    height: 180px;
+    height: 185px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
