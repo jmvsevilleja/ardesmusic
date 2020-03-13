@@ -1393,7 +1393,7 @@ h3 {
   background-size: cover;
   background: #3c0003;
   position: relative;
-  z-index: 0;
+  z-index: 1000;
 }
 .footer h4 {
   margin: 20px 0 10px;
