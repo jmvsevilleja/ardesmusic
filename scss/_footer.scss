@@ -192,10 +192,6 @@
     transition: all 0.5s ease-out 0s;
     border-radius: 50%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-    &:hover {
-      background: $heading_color3;
-      color: #fff;
-    }
   }
 
   #callnowbutton {
