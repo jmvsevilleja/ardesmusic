@@ -274,28 +274,27 @@
           <div class="col-lg-5">
             <div class="contact_form_box">
               <h2 class="contact-title">Contact Us</h2>
+              <div id="contactSuccess" class="d-none">
+                <p class="text-center">
+                  <strong>Thank you so much for your inquiry.</strong><br />
+                  Our next assigned executive will get back with you the soonest
+                  we receive your message. <br />God bless you!
+                </p>
+              </div>
+              <div id="contactError" class="d-none">
+                <p class="text-center">
+                  Error Occured
+                </p>
+              </div>
               <form
                 class="form-contact contact_form"
-                action="contact_process.php"
+                action=""
                 method="post"
                 id="contactForm"
                 novalidate="novalidate"
               >
+                <input type="hidden" name="date" id="date" value="date" />
                 <div class="row">
-                  <div class="col-12">
-                    <div class="form-group">
-                      <textarea
-                        class="form-control w-100"
-                        name="message"
-                        id="message"
-                        cols="30"
-                        rows="9"
-                        onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Enter Message'"
-                        placeholder="Enter Message"
-                      ></textarea>
-                    </div>
-                  </div>
                   <div class="col-sm-6">
                     <div class="form-group">
                       <input
@@ -326,13 +325,40 @@
                     <div class="form-group">
                       <input
                         class="form-control"
-                        name="phone"
-                        id="phone"
+                        name="contact"
+                        id="contact"
                         type="text"
                         onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = 'Enter Phone Number'"
-                        placeholder="Enter Phone Number"
+                        onblur="this.placeholder = 'Enter Contact Number'"
+                        placeholder="Enter Contact Number"
                       />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        name="location"
+                        id="location"
+                        type="text"
+                        onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Enter Location'"
+                        placeholder="Enter Location"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control w-100"
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="5"
+                        onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Enter Message'"
+                        placeholder="Enter Message"
+                      ></textarea>
                     </div>
                   </div>
                 </div>
@@ -340,9 +366,9 @@
                   <button
                     type="submit"
                     class="button button-contactForm boxed-btn4"
+                    id="submitBtn"
                   >
                     Send
-                  </button>
                 </div>
               </form>
             </div>

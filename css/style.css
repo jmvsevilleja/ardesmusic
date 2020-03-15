@@ -2240,6 +2240,9 @@ h3 {
 .contact_form_box .form-contact .form-group {
   margin-bottom: 20px;
 }
+.contact_form_box p {
+  color: #ccc;
+}
 
 .contact-title {
   font-size: 27px;
@@ -2259,7 +2262,7 @@ h3 {
   border-radius: 0px;
   height: 48px;
   padding-left: 18px;
-  font-size: 13px;
+  font-size: 0.9rem;
   background: #fff;
 }
 .form-contact .form-control:focus {

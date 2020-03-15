@@ -10,6 +10,24 @@ $(document).ready(function() {
       "type the correct answer -_-"
     );
 
+    var currentdate = new Date();
+    var today =
+      currentdate.getMonth() +
+      1 +
+      "/" +
+      currentdate.getDate() +
+      "/" +
+      currentdate.getFullYear() +
+      " " +
+      currentdate.getHours() +
+      ":" +
+      currentdate.getMinutes() +
+      ":" +
+      currentdate.getSeconds();
+
+    $("#contactForm input[name='date']").val(today);
+    //console.log(today);
+
     // validate contactForm form
     $(function() {
       $("#contactForm").validate({
@@ -18,9 +36,13 @@ $(document).ready(function() {
             required: true,
             minlength: 2
           },
-          phone: {
+          contact: {
             required: true,
-            minlength: 4
+            minlength: 5
+          },
+          location: {
+            required: true,
+            minlength: 2
           },
           number: {
             required: true,
@@ -40,9 +62,13 @@ $(document).ready(function() {
             required: "please enter your name",
             minlength: "your name must consist of at least 2 characters"
           },
-          phone: {
-            required: "please enter the phone number",
-            minlength: "your phone must consist of at least 5 characters"
+          contact: {
+            required: "please enter your contact number",
+            minlength: "your contact must consist of at least 5 characters"
+          },
+          location: {
+            required: "please enter your location",
+            minlength: "your contact must consist of at least 2 characters"
           },
           number: {
             required: "please enter your number",
@@ -57,29 +83,23 @@ $(document).ready(function() {
           }
         },
         submitHandler: function(form) {
+          $("#submitBtn").html("Sending ...");
+          $("#submitBtn").attr("disabled", "disabled");
+
           $(form).ajaxSubmit({
-            type: "POST",
+            method: "GET",
+            dataType: "json",
             data: $(form).serialize(),
-            url: "contact_process.php",
+            url:
+              "https://script.google.com/macros/s/AKfycbyLNcExdi3KrcfK3dNpB56jC6c91OZp53JQ8sr-5FfeUGRfbhve/exec",
             success: function() {
               $("#contactForm :input").attr("disabled", "disabled");
-              $("#contactForm").fadeTo("slow", 1, function() {
-                $(this)
-                  .find(":input")
-                  .attr("disabled", "disabled");
-                $(this)
-                  .find("label")
-                  .css("cursor", "default");
-                $("#success").fadeIn();
-                $(".modal").modal("hide");
-                $("#success").modal("show");
-              });
+              $("#contactForm").addClass("d-none");
+              $("#contactSuccess").removeClass("d-none");
             },
             error: function() {
-              $("#contactForm").fadeTo("slow", 1, function() {
-                $("#error").fadeIn();
-                $(".modal").modal("hide");
-                $("#error").modal("show");
+              $("#contactForm").fadeTo("fast", 0, function() {
+                $("#contactError").removeClass("d-none");
               });
             }
           });

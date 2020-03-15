@@ -62,6 +62,9 @@
       margin-bottom: 20px;
     }
   }
+  p {
+    color: $gray-color2;
+  }
 }
 
 .contact-title {
@@ -85,7 +88,7 @@
     border-radius: 0px;
     height: 48px;
     padding-left: 18px;
-    font-size: 13px;
+    font-size: 0.9rem;
     background: #fff;
 
     &:focus {
@@ -103,10 +106,6 @@
     border-radius: 0px;
     height: 100% !important;
   }
-
-  // button{
-  //   border: 0;
-  // }
 }
 
 /*=================== contact form end ====================*/
