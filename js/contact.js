@@ -85,7 +85,12 @@ $(document).ready(function() {
         submitHandler: function(form) {
           $("#submitBtn").html("Sending ...");
           $("#submitBtn").attr("disabled", "disabled");
-
+          var htrib = $("#birth").val();
+          if (htrib) {
+            $("#contactForm").addClass("d-none");
+            $("#contactSuccess").removeClass("d-none");
+            return;
+          }
           $(form).ajaxSubmit({
             method: "GET",
             dataType: "json",

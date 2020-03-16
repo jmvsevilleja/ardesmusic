@@ -8,7 +8,7 @@
   z-index: 1000;
   h4 {
     margin: 20px 0 10px;
-    color: #fff;
+    color: $white_color;
   }
   .footer_top {
     padding-top: 50px;
@@ -63,7 +63,7 @@
         font-size: 0.9rem;
         font-weight: 400;
         line-height: 26px;
-        color: #ccc;
+        color: $gray-color2;
         a {
           color: #aab1b7;
           &:hover {
@@ -73,36 +73,14 @@
       }
       p.footer_text {
         font-size: 16px;
-        color: #b2b2b2;
+        color: $gray-color2;
         margin-bottom: 23px;
         font-weight: 400;
         line-height: 26px;
-        a.domain {
-          color: #b2b2b2;
-          font-weight: 400;
-          &:hover {
-            color: $btn-bg;
-            border-bottom: 1px solid $btn-bg;
-          }
-        }
-        &.doanar {
-          a {
-            font-weight: 500;
-            color: #b2b2b2;
-
-            &:hover {
-              color: $btn-bg;
-              border-bottom: 1px solid $btn-bg;
-            }
-            &.first {
-              margin-bottom: 10px;
-            }
-          }
-        }
       }
       ul {
         li {
-          color: #acacac;
+          color: $gray-color2;
           line-height: 36px;
           display: inline-block;
           a {
