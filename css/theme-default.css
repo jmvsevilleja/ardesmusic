@@ -317,6 +317,10 @@ h3 {
   border: 1px solid transparent;
 }
 
+.no-bg {
+  background: none !important;
+}
+
 .mb-20px {
   margin-bottom: 20px;
 }

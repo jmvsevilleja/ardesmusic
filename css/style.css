@@ -337,6 +337,10 @@ h3 {
   border: 1px solid transparent;
 }
 
+.no-bg {
+  background: none !important;
+}
+
 .mb-20px {
   margin-bottom: 20px;
 }
@@ -1151,28 +1155,6 @@ h3 {
   width: 100%;
 }
 
-.counter_wrap .single_counter {
-  margin-bottom: 30px;
-}
-@media (max-width: 767px) {
-  .counter_wrap .single_counter {
-    text-align: center;
-  }
-}
-.counter_wrap .single_counter h3 {
-  color: #FF4A52;
-  font-weight: 400;
-  font-size: 60px;
-  margin-bottom: 17px;
-}
-.counter_wrap .single_counter p {
-  color: #7A838B;
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 0;
-  line-height: 28px;
-}
-
 .team_area {
   padding-top: 180px;
   padding-bottom: 150px;
@@ -1384,6 +1366,45 @@ h3 {
 }
 .instructors_area .more_place_btn {
   margin-top: 40px;
+}
+
+.instructors_page {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.instructors_page .single_place {
+  margin-bottom: 20px;
+}
+.instructors_page .single_place .thumb {
+  position: relative;
+  overflow: hidden;
+}
+.instructors_page .single_place .thumb img {
+  width: 60%;
+  margin: 0 auto;
+}
+.instructors_page .single_place .instructor_info h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+.instructors_page .single_place .instructor_info p {
+  text-align: center;
+  font-weight: 400;
+  color: #51645e;
+  margin-top: 2px;
+  margin-bottom: 7px;
+}
+.instructors_page .single_place .instructor_info p strong {
+  font-weight: 500;
+}
+.instructors_page .single_place .instructor_info li {
+  list-style-type: circle;
+  margin-left: 30px;
+  color: #51645e;
 }
 
 .footer {
