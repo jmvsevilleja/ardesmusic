@@ -1,8 +1,9 @@
 .instruments_area {
-  background-image: url(../img/banner/back05.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-color: $theme-color3;
+  // background-image: url(../img/banner/back05.jpg);
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-size: cover;
   padding: 67px 0;
 
   @media #{$mobile_device} {
