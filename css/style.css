@@ -1372,6 +1372,28 @@ h3 {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.instructors_page p {
+  margin-bottom: 15px;
+}
+.instructors_page img {
+  max-width: 400px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .instructors_page img {
+    max-width: 500px;
+  }
+}
+.instructors_page h1 {
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .instructors_page h1 {
+    font-size: 25px;
+  }
+}
 .instructors_page .single_place {
   margin-bottom: 20px;
 }
