@@ -3,17 +3,17 @@
   padding-bottom: 80px;
   p {
     margin-bottom: 15px;
-  }
-
-  img {
-    max-width: 400px;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    @media #{$mobile_device} {
-      max-width: 500px;
+    img {
+      max-width: 400px;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      @media #{$mobile_device} {
+        max-width: 500px;
+      }
     }
   }
+
   h1 {
     margin-bottom: 40px;
 
