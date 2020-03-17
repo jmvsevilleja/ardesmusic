@@ -1,16 +1,11 @@
 .instructors_page {
   padding-top: 80px;
   padding-bottom: 80px;
+
   p {
     margin-bottom: 15px;
     img {
-      max-width: 400px;
-      float: left;
-      margin-right: 20px;
-      margin-bottom: 20px;
-      @media #{$mobile_device} {
-        max-width: 500px;
-      }
+      margin: 5px 10px;
     }
   }
 
@@ -21,6 +16,21 @@
       font-size: 25px;
     }
   }
+
+  hr {
+    margin: 40px 0;
+  }
+
+  .ithumb img {
+    max-width: 400px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    @media #{$mobile_device} {
+      max-width: 500px;
+    }
+  }
+
   .single_place {
     margin-bottom: 20px;
     .thumb {
