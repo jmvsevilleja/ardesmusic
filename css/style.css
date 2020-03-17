@@ -735,7 +735,7 @@ h3 {
   margin-left: 20px;
 }
 .header-area .main-header-area {
-  background: #3c0003;
+  background: #000;
   padding: 5px 5px;
 }
 .header-area .main-header-area.details_nav_bg {
@@ -1440,7 +1440,7 @@ h3 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background: #3c0003;
+  background: #000;
   position: relative;
   z-index: 1000;
 }
@@ -2159,7 +2159,7 @@ h3 {
 }
 .school_area h4 {
   margin-top: 5px;
-  color: #3c0003;
+  color: #000;
 }
 .school_area p {
   color: #51645e;
@@ -2218,7 +2218,7 @@ h3 {
 /*=================== contact banner end ====================*/
 /*=================== contact form start ====================*/
 .contact_form_box {
-  background: #3c0003;
+  background: #000;
   padding: 15px 15px 5px;
   border-radius: 5px;
   margin-top: -20px;
