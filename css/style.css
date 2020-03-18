@@ -627,14 +627,14 @@ h3 {
   left: 0;
   right: 0;
   margin: auto;
-  top: 9px;
+  top: 6px;
 }
 .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
-  color: #FF4A52;
+  color: #ff4a52;
 }
 .slicknav_menu .slicknav_nav a.active {
-  color: #FF4A52;
+  color: #ff4a52;
 }
 @media (max-width: 767px) {
   .slicknav_menu .slicknav_nav a i {
@@ -1297,6 +1297,61 @@ h3 {
   background: #ff4a52;
 }
 
+.testimonial_page {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media (max-width: 767px) {
+  .testimonial_page {
+    padding-top: 50px;
+  }
+}
+.testimonial_page .single_testmonial {
+  margin-bottom: 40px;
+}
+.testimonial_page .single_testmonial p {
+  color: #51645e;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 34px 0 10px 0;
+}
+.testimonial_page .single_testmonial .author_thumb {
+  width: 106px;
+  height: 106px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: auto;
+  margin: auto auto 15px auto;
+  position: relative;
+}
+.testimonial_page .single_testmonial .author_thumb::before {
+  position: absolute;
+  right: -15px;
+  bottom: -12px;
+  width: 50px;
+  height: 50px;
+  content: "";
+  font-family: "Flaticon";
+  text-align: center;
+  line-height: 50px;
+  background: #1ec6b6;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 17px;
+}
+.testimonial_page .single_testmonial .author_thumb img {
+  display: inline-block;
+  width: 100%;
+}
+.testimonial_page .single_testmonial .testmonial_author h3 {
+  color: #7a838b;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
 .instructors_area {
   background-image: url(../img/banner/back03.jpg);
   background-repeat: no-repeat;
@@ -1307,8 +1362,7 @@ h3 {
 }
 @media (max-width: 767px) {
   .instructors_area {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 50px;
   }
 }
 .instructors_area .single_place .thumb {
@@ -1371,6 +1425,11 @@ h3 {
 .instructors_page {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+@media (max-width: 767px) {
+  .instructors_page {
+    padding-top: 50px;
+  }
 }
 .instructors_page p {
   margin-bottom: 15px;
@@ -1997,13 +2056,12 @@ h3 {
 }
 
 .about_us_area {
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 @media (max-width: 767px) {
   .about_us_area {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
   }
 }
 .about_us_area h1 {
@@ -2190,7 +2248,7 @@ h3 {
   }
 }
 .contact_us_area h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .contact_us_area h1 {
   line-height: 70px;
@@ -2250,6 +2308,7 @@ h3 {
   padding: 15px 15px 5px;
   border-radius: 5px;
   margin-top: -20px;
+  margin-bottom: 20px;
 }
 @media (max-width: 767px) {
   .contact_form_box {
@@ -2344,6 +2403,23 @@ h3 {
 }
 .modal-message .modal-dialog .modal-content .modal-header p {
   display: block;
+}
+
+.gj-datepicker-md [role=right-icon] {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 16px;
+  color: #919191;
+  margin-right: 15px;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  color: #aab1b7;
+}
+
+.gj-picker-md div[role=navigator] {
+  padding-left: 30px !important;
 }
 
 .sample-text-area {

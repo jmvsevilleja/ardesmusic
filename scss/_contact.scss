@@ -6,7 +6,7 @@
     padding-bottom: 30px;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   h1 {
     line-height: 70px;
@@ -78,6 +78,7 @@
   padding: 15px 15px 5px;
   border-radius: 5px;
   margin-top: -20px;
+  margin-bottom: 20px;
   @media #{$mobile_device} {
     margin-top: 20px;
   }
@@ -183,4 +184,20 @@
       }
     }
   }
+}
+
+.gj-datepicker-md [role="right-icon"] {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 16px;
+  color: #919191;
+  margin-right: 15px;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  color: #aab1b7;
+}
+.gj-picker-md div[role="navigator"] {
+  padding-left: 30px !important;
 }
