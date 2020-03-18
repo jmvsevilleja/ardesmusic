@@ -1392,8 +1392,8 @@ h3 {
 .instructors_page .ithumb img {
   max-width: 400px;
   float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 @media (max-width: 767px) {
   .instructors_page .ithumb img {
@@ -2179,6 +2179,37 @@ h3 {
   border: none;
 }
 
+.contact_us_area {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .contact_us_area {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.contact_us_area h3 {
+  font-size: 2rem;
+}
+.contact_us_area h1 {
+  line-height: 70px;
+}
+.contact_us_area p {
+  margin-bottom: 20px;
+}
+.contact_us_area hr {
+  margin: 40px 0;
+}
+.contact_us_area .thumb {
+  position: relative;
+  overflow: hidden;
+}
+.contact_us_area .thumb img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 /*=================== contact banner start ====================*/
 .dropdown .dropdown-menu {
   -webkit-transition: all 0.3s;
@@ -2313,29 +2344,6 @@ h3 {
 }
 .modal-message .modal-dialog .modal-content .modal-header p {
   display: block;
-}
-
-.contact-section {
-  padding: 130px 0 100px;
-}
-@media (max-width: 991px) {
-  .contact-section {
-    padding: 70px 0 40px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .contact-section {
-    padding: 80px 0 50px;
-  }
-}
-.contact-section .btn_2 {
-  background-color: #191d34;
-  padding: 18px 60px;
-  border-radius: 50px;
-  margin-top: 0;
-}
-.contact-section .btn_2:hover {
-  background-color: #f23839;
 }
 
 .sample-text-area {
