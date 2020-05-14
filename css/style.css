@@ -947,39 +947,31 @@ h3 {
 }
 
 .slider_bg_1 {
-  background-image: url(../img/banner/Best-Music-School-2014.gif);
+  background-image: url(../img/banner/1.jpg);
 }
 
 .slider_bg_2 {
-  background-image: url(../img/banner/Best-Music-School.gif);
+  background-image: url(../img/banner/2.jpg);
 }
 
 .slider_bg_3 {
-  background-image: url(../img/banner/love_music_lessons_CA.gif);
+  background-image: url(../img/banner/3.jpg);
 }
 
 .slider_bg_4 {
-  background-image: url(../img/banner/Learning-to-play.gif);
+  background-image: url(../img/banner/4.jpg);
 }
 
 .slider_bg_5 {
-  background-image: url(../img/banner/Motivate-and-Empower.gif);
+  background-image: url(../img/banner/5.jpg);
 }
 
 .slider_bg_6 {
-  background-image: url(../img/banner/Music-at-an-early-age.gif);
+  background-image: url(../img/banner/6.jpg);
 }
 
 .slider_bg_7 {
-  background-image: url(../img/banner/Natural-Ability.gif);
-}
-
-.slider_bg_8 {
-  background-image: url(../img/banner/Share-our-Music.gif);
-}
-
-.slider_bg_9 {
-  background-image: url(../img/banner/Train-and-teach.gif);
+  background-image: url(../img/banner/7.jpg);
 }
 
 .slider_area {
@@ -987,34 +979,34 @@ h3 {
   z-index: 0;
 }
 .slider_area .single_slider {
-  height: 780px;
+  height: 612px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 @media (max-width: 767px) {
   .slider_area .single_slider {
-    height: 185px;
+    height: 85px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .slider_area .single_slider {
-    height: 280px;
+    height: 212px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .slider_area .single_slider {
-    height: 380px;
+    height: 312px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .slider_area .single_slider {
-    height: 480px;
+    height: 412px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1500px) {
   .slider_area .single_slider {
-    height: 580px;
+    height: 512px;
   }
 }
 @media (max-width: 767px) {
