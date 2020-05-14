@@ -986,7 +986,7 @@ h3 {
 }
 @media (max-width: 767px) {
   .slider_area .single_slider {
-    height: 139px;
+    height: 140px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -996,12 +996,12 @@ h3 {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .slider_area .single_slider {
-    height: 355px;
+    height: 315px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .slider_area .single_slider {
-    height: 435px;
+    height: 415px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1500px) {

@@ -39,16 +39,16 @@
     background-position: center center;
 
     @media #{$mobile_device} {
-      height: 139px;
+      height: 140px;
     }
     @media #{$large_mobile} {
       height: 255px;
     }
     @media #{$tablet_device} {
-      height: 355px;
+      height: 315px;
     }
     @media #{$mid_device} {
-      height: 435px;
+      height: 415px;
     }
     @media #{$large_device} {
       height: 555px;
