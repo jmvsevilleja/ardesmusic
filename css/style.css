@@ -979,34 +979,34 @@ h3 {
   z-index: 0;
 }
 .slider_area .single_slider {
-  height: 612px;
+  height: 712px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 @media (max-width: 767px) {
   .slider_area .single_slider {
-    height: 152px;
+    height: 155px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .slider_area .single_slider {
-    height: 212px;
+    height: 255px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .slider_area .single_slider {
-    height: 312px;
+    height: 355px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .slider_area .single_slider {
-    height: 412px;
+    height: 435px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1500px) {
   .slider_area .single_slider {
-    height: 512px;
+    height: 555px;
   }
 }
 @media (max-width: 767px) {

@@ -33,25 +33,25 @@
   //     opacity: .6;
   // }
   .single_slider {
-    height: 612px;
+    height: 712px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 
     @media #{$mobile_device} {
-      height: 152px;
+      height: 155px;
     }
     @media #{$large_mobile} {
-      height: 212px;
+      height: 255px;
     }
     @media #{$tablet_device} {
-      height: 312px;
+      height: 355px;
     }
     @media #{$mid_device} {
-      height: 412px;
+      height: 435px;
     }
     @media #{$large_device} {
-      height: 512px;
+      height: 555px;
     }
     .slider_text {
       @media #{$mobile_device} {
