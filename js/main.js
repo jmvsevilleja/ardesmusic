@@ -1,7 +1,7 @@
-(function($) {
+(function ($) {
   "use strict";
   // TOP Menu Sticky
-  $(window).on("scroll", function() {
+  $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
     if (scroll < 37) {
       $("#sticky-header").removeClass("sticky");
@@ -12,7 +12,7 @@
     }
   });
 
-  $(document).ready(function() {
+  $(document).ready(function () {
     // mobile_menu
     var menu = $("ul#navigation");
     if (menu.length) {
@@ -121,21 +121,21 @@
       ]
     });
 
-    $(function() {
+    $(function () {
       $("#slider-range").slider({
         range: true,
         min: 0,
         max: 600,
         values: [75, 300],
-        slide: function(event, ui) {
+        slide: function (event, ui) {
           $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
         }
       });
       $("#amount").val(
         "$" +
-          $("#slider-range").slider("values", 0) +
-          " - $" +
-          $("#slider-range").slider("values", 1)
+        $("#slider-range").slider("values", 0) +
+        " - $" +
+        $("#slider-range").slider("values", 1)
       );
     });
 
@@ -151,13 +151,13 @@
     });
 
     // filter items on button click
-    $(".portfolio-menu").on("click", "button", function() {
+    $(".portfolio-menu").on("click", "button", function () {
       var filterValue = $(this).attr("data-filter");
       $grid.isotope({ filter: filterValue });
     });
 
     //for menu active class
-    $(".portfolio-menu button").on("click", function(event) {
+    $(".portfolio-menu button").on("click", function (event) {
       $(this)
         .siblings(".active")
         .removeClass("active");
@@ -321,7 +321,7 @@
   });
 
   // resitration_Form
-  $(document).ready(function() {
+  $(document).ready(function () {
     $(".popup-with-form").magnificPopup({
       type: "inline",
       preloader: false,
@@ -330,7 +330,7 @@
       // When elemened is focused, some mobile browsers in some cases zoom in
       // It looks not nice, so we disable it:
       callbacks: {
-        beforeOpen: function() {
+        beforeOpen: function () {
           if ($(window).width() < 700) {
             this.st.focus = false;
           } else {
@@ -352,7 +352,7 @@
     }
   }
   // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {
+  window.onscroll = function () {
     scrollFunction();
   };
 
