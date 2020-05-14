@@ -15,6 +15,7 @@
     overflow: hidden;
     @include transition(0.3s);
     margin-bottom: 30px;
+    min-height: 656px;
     .icon {
       position: relative;
       overflow: hidden;

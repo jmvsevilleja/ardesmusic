@@ -2091,6 +2091,7 @@ h3 {
   -o-transition: 0.3s;
   transition: 0.3s;
   margin-bottom: 30px;
+  min-height: 656px;
 }
 .instruments_area .single_school .icon {
   position: relative;
