@@ -33,7 +33,7 @@
   //     opacity: .6;
   // }
   .single_slider {
-    height: 712px;
+    height: 1055px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -53,6 +53,13 @@
     @media #{$large_device} {
       height: 555px;
     }
+    @media #{$xlarge_device} {
+      height: 655px;
+    }
+    @media #{$xxlarge_device} {
+      height: 755px;
+    }
+
     .slider_text {
       @media #{$mobile_device} {
         margin: 100px 0 50px 0;

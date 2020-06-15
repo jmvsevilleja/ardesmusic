@@ -1,10 +1,10 @@
-$(document).ready(function() {
-  (function($) {
+$(document).ready(function () {
+  (function ($) {
     "use strict";
 
     jQuery.validator.addMethod(
       "answercheck",
-      function(value, element) {
+      function (value, element) {
         return this.optional(element) || /^\bcat\b$/.test(value);
       },
       "type the correct answer -_-"
@@ -26,10 +26,26 @@ $(document).ready(function() {
       currentdate.getSeconds();
 
     $("#registerForm input[name='date']").val(today);
-    //console.log(today);
+
+    $("#registerForm select[name='know']").change(function () {
+      var $option = $(this).find('option:selected');
+      var value = $option.val();
+
+      $("#registerForm input[name='referred']").parent().parent().addClass('d-none');
+      $("#registerForm input[name='others']").parent().parent().addClass('d-none');
+
+      if (value == 'Others') {
+        $("#registerForm input[name='others']").parent().parent().removeClass('d-none');
+      }
+
+      if (value == 'Referred by') {
+        $("#registerForm input[name='referred']").parent().parent().removeClass('d-none');
+      }
+
+    });
 
     // validate registerForm form
-    $(function() {
+    $(function () {
       $("#registerForm").validate({
         rules: {
           name: {
@@ -52,10 +68,6 @@ $(document).ready(function() {
             required: true,
             email: true
           },
-          message: {
-            required: true,
-            minlength: 20
-          }
         },
         messages: {
           name: {
@@ -82,7 +94,7 @@ $(document).ready(function() {
             minlength: "your message must consist of at least 20 characters"
           }
         },
-        submitHandler: function(form) {
+        submitHandler: function (form) {
           $("#submitBtn").html("Sending ...");
           $("#submitBtn").attr("disabled", "disabled");
           var htrib = $("#birth").val();
@@ -97,13 +109,13 @@ $(document).ready(function() {
             data: $(form).serialize(),
             url:
               "https://script.google.com/macros/s/AKfycbyLNcExdi3KrcfK3dNpB56jC6c91OZp53JQ8sr-5FfeUGRfbhve/exec",
-            success: function() {
+            success: function () {
               $("#registerForm :input").attr("disabled", "disabled");
               $("#registerForm").addClass("d-none");
               $("#contactSuccess").removeClass("d-none");
             },
-            error: function() {
-              $("#registerForm").fadeTo("fast", 0, function() {
+            error: function () {
+              $("#registerForm").fadeTo("fast", 0, function () {
                 $("#contactError").removeClass("d-none");
               });
             }

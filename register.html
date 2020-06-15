@@ -149,7 +149,7 @@
                       </li>
                       <li><a class="" href="http://www.ardesmusic.com/blog" target="_blank">Announcements</a></li>
                       <li><a class="" href="contact.html">Contact</a></li>
-                      <li><a class="" href="register.html">Register</a></li>
+                      <li><a class="" href="register.html">Inquiry</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -170,9 +170,9 @@
     <div class="container">
       <div class="row justify-content-center">
 
-        <div class="col-lg-6">
+        <div class="col-lg-10">
           <div class="contact_form_box">
-            <h2 class="contact-title">ONLINE REGISTRATION FORM</h2>
+            <h2 class="contact-title">ONLINE INQUIRY FORM</h2>
             <div id="contactSuccess" class="d-none">
               <p class="text-center">
                 <strong>Your online registration has been sent!</strong>
@@ -206,8 +206,9 @@
                 </div>
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''"
-                      onblur="this.placeholder = 'Enter Student Name'" placeholder="Enter Student Name" />
+                    <input class="form-control valid" name="student" id="student" type="text"
+                      onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Student Name'"
+                      placeholder="Enter Student Name" />
                   </div>
                 </div>
                 <div class="col-sm-6">
@@ -241,7 +242,17 @@
                     <select class="form-control" name="major" id="major">
                       <option data-display="Major">What specific major of study you are inquiring about?</option>
                       <option value="Piano">Piano</option>
-                      <option value="Guitar">Guitar</option>
+                      <option value="Voice">Voice</option>
+                      <optgroup label="Instrumental">
+                        <option value="Guitar">Guitar</option>
+                        <option value="Violin">Violin</option>
+                        <option value="Cello">Cello</option>
+                        <option value="Flute">Flute</option>
+                        <option value="Clarinet">Clarinet</option>
+                      </optgroup>
+                      <optgroup label="Percussion">
+                        <option value="Drums">Drums</option>
+                      </optgroup>
                     </select>
                   </div>
                 </div>
@@ -249,9 +260,26 @@
                   <div class="form-group">
                     <select class="form-control" name="know" id="know">
                       <option data-display="Know">How did you get to know about us?</option>
-                      <option value="Internet">Internet</option>
-                      <option value="Referral">Referral</option>
+                      <option value="Google">Google</option>
+                      <option value="Yelp">Yelp</option>
+                      <option value="Facebook">Facebook</option>
+                      <option value="Instagram">Instagram</option>
+                      <option value="Referred by">Referred by</option>
+                      <option value="Others">Others</option>
                     </select>
+                  </div>
+                </div>
+                <div class="col-sm-12 d-none">
+                  <div class="form-group">
+                    <input class="form-control " name="referred" id="referred" type="text"
+                      onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Referred by'"
+                      placeholder="Enter Referred by" />
+                  </div>
+                </div>
+                <div class="col-sm-12 d-none">
+                  <div class="form-group">
+                    <input class="form-control" name="others" id="others" type="text" onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Enter Others'" placeholder="Enter Others" />
                   </div>
                 </div>
               </div>
@@ -260,27 +288,6 @@
                   Send
               </div>
             </form>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="section_title text-center mb_70">
-            <h3>Arts Development School of Music</h3>
-            <p>
-              10044 Rosecrans Avenue, Bellflower, CA 90706
-              <br /><strong>Telephone:</strong> <a href="tel:5628047676">(562) 804-7676</a>
-              <br /><strong>E-mail:</strong> <a href="emailto:ardesMUSIC.info@gmail.com">ardesMUSIC.info@gmail.com</a>
-            </p>
-            <p>
-              TEXT or CALL (562) 50-ARTS-1 or <a href="tel:562-502-7871">562-502-7871</a>
-            </p>
-            <hr>
-            <h5>FOR EASY LOCATION:</h5>
-
-            <p>You can easily find Arts Development School of Music in the compound of Rosewood Center. Cross streets:
-              Rosecrans Ave. & Woodruff Ave., Bellflower California.
-            </p>
-            <p>The Music School is within the compound of Carl's Jr. Burger or just beside the Papa John's Pizza.
-            </p>
           </div>
         </div>
       </div>
