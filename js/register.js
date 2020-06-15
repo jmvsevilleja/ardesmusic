@@ -68,6 +68,9 @@ $(document).ready(function () {
             required: true,
             email: true
           },
+          major: {
+            required: true,
+          },
         },
         messages: {
           name: {
@@ -89,9 +92,8 @@ $(document).ready(function () {
           email: {
             required: "please enter your email"
           },
-          message: {
-            required: "please enter your message",
-            minlength: "your message must consist of at least 20 characters"
+          major: {
+            required: "please enter the specific major of study you are inquiring about",
           }
         },
         submitHandler: function (form) {
@@ -103,23 +105,32 @@ $(document).ready(function () {
             $("#contactSuccess").removeClass("d-none");
             return;
           }
-          $(form).ajaxSubmit({
-            method: "GET",
-            dataType: "json",
-            data: $(form).serialize(),
-            url:
-              "https://script.google.com/macros/s/AKfycbyLNcExdi3KrcfK3dNpB56jC6c91OZp53JQ8sr-5FfeUGRfbhve/exec",
-            success: function () {
-              $("#registerForm :input").attr("disabled", "disabled");
-              $("#registerForm").addClass("d-none");
-              $("#contactSuccess").removeClass("d-none");
-            },
-            error: function () {
-              $("#registerForm").fadeTo("fast", 0, function () {
-                $("#contactError").removeClass("d-none");
-              });
-            }
-          });
+          var last = $("#registerForm input[name='last']").val();
+
+          if (last) {
+            $("#registerForm :input").attr("disabled", "disabled");
+            $("#registerForm").addClass("d-none");
+            $("#contactSuccess").removeClass("d-none");
+          } else {
+            $(form).ajaxSubmit({
+              method: "GET",
+              dataType: "json",
+              data: $(form).serialize(),
+              url:
+                "https://script.google.com/macros/s/AKfycbyLNcExdi3KrcfK3dNpB56jC6c91OZp53JQ8sr-5FfeUGRfbhve/exec",
+              success: function () {
+                $("#registerForm :input").attr("disabled", "disabled");
+                $("#registerForm").addClass("d-none");
+                $("#contactSuccess").removeClass("d-none");
+              },
+              error: function () {
+                $("#registerForm").fadeTo("fast", 0, function () {
+                  $("#contactError").removeClass("d-none");
+                  $("#registerForm").addClass("d-none");
+                });
+              }
+            });
+          }
         }
       });
     });

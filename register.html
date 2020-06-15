@@ -204,6 +204,12 @@
                       onblur="this.placeholder = 'Enter Guardian Name'" placeholder="Enter Guardan Name" />
                   </div>
                 </div>
+                <div class="col-sm-12 d-none">
+                  <div class="form-group">
+                    <input class="form-control valid" name="last" id="last" type="text" onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Enter Last Name'" placeholder="Enter Last Name" />
+                  </div>
+                </div>
                 <div class="col-sm-6">
                   <div class="form-group">
                     <input class="form-control valid" name="student" id="student" type="text"
@@ -240,7 +246,8 @@
                 <div class="col-sm-12">
                   <div class="form-group">
                     <select class="form-control" name="major" id="major">
-                      <option data-display="Major">What specific major of study you are inquiring about?</option>
+                      <option data-display="Major" value="">What specific major of study you are inquiring about?
+                      </option>
                       <option value="Piano">Piano</option>
                       <option value="Voice">Voice</option>
                       <optgroup label="Instrumental">
@@ -259,7 +266,7 @@
                 <div class="col-sm-12">
                   <div class="form-group">
                     <select class="form-control" name="know" id="know">
-                      <option data-display="Know">How did you get to know about us?</option>
+                      <option data-display="Know" value="">How did you get to know about us?</option>
                       <option value="Google">Google</option>
                       <option value="Yelp">Yelp</option>
                       <option value="Facebook">Facebook</option>
