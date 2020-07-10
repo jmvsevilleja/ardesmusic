@@ -1,10 +1,10 @@
-$(document).ready(function() {
-  (function($) {
+$(document).ready(function () {
+  (function ($) {
     "use strict";
 
     jQuery.validator.addMethod(
       "answercheck",
-      function(value, element) {
+      function (value, element) {
         return this.optional(element) || /^\bcat\b$/.test(value);
       },
       "type the correct answer -_-"
@@ -29,7 +29,7 @@ $(document).ready(function() {
     //console.log(today);
 
     // validate contactForm form
-    $(function() {
+    $(function () {
       $("#contactForm").validate({
         rules: {
           name: {
@@ -82,7 +82,7 @@ $(document).ready(function() {
             minlength: "your message must consist of at least 20 characters"
           }
         },
-        submitHandler: function(form) {
+        submitHandler: function (form) {
           $("#submitBtn").html("Sending ...");
           $("#submitBtn").attr("disabled", "disabled");
           var htrib = $("#birth").val();
@@ -96,14 +96,14 @@ $(document).ready(function() {
             dataType: "json",
             data: $(form).serialize(),
             url:
-              "https://script.google.com/macros/s/AKfycbyLNcExdi3KrcfK3dNpB56jC6c91OZp53JQ8sr-5FfeUGRfbhve/exec",
-            success: function() {
+              "https://script.google.com/macros/s/AKfycbxif2-XXrVtnMKFxfYeHn5Z4WUllYY-9UpqLNX6ciLu4QBzVrM1/exec",
+            success: function () {
               $("#contactForm :input").attr("disabled", "disabled");
               $("#contactForm").addClass("d-none");
               $("#contactSuccess").removeClass("d-none");
             },
-            error: function() {
-              $("#contactForm").fadeTo("fast", 0, function() {
+            error: function () {
+              $("#contactForm").fadeTo("fast", 0, function () {
                 $("#contactError").removeClass("d-none");
               });
             }

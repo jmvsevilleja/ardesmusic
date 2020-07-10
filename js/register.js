@@ -68,6 +68,9 @@ $(document).ready(function () {
             required: true,
             email: true
           },
+          mode: {
+            required: true,
+          },
           major: {
             required: true,
           },
@@ -92,8 +95,11 @@ $(document).ready(function () {
           email: {
             required: "please enter your email"
           },
+          mode: {
+            required: "please select the mode of lesson",
+          },
           major: {
-            required: "please enter the specific major of study you are inquiring about",
+            required: "please select the specific major of study you are inquiring about",
           }
         },
         submitHandler: function (form) {
@@ -117,7 +123,7 @@ $(document).ready(function () {
               dataType: "json",
               data: $(form).serialize(),
               url:
-                "https://script.google.com/macros/s/AKfycbyLNcExdi3KrcfK3dNpB56jC6c91OZp53JQ8sr-5FfeUGRfbhve/exec",
+                "https://script.google.com/macros/s/AKfycbzuXTPpJ50RbJOgp6VUFK3J3AOYeIKJI0UaYkzWhA/exec",
               success: function () {
                 $("#registerForm :input").attr("disabled", "disabled");
                 $("#registerForm").addClass("d-none");
