@@ -123,7 +123,7 @@ $(document).ready(function () {
               dataType: "json",
               data: $(form).serialize(),
               url:
-                "https://script.google.com/macros/s/AKfycbzuXTPpJ50RbJOgp6VUFK3J3AOYeIKJI0UaYkzWhA/exec",
+                "https://script.google.com/macros/s/AKfycbw23hZGWlC6-OvzHLz-CzZRTseyNP0dVx6X0kVZn-TD_tTTI-_Z/exec",
               success: function () {
                 $("#registerForm :input").attr("disabled", "disabled");
                 $("#registerForm").addClass("d-none");

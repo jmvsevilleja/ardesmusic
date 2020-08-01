@@ -96,7 +96,7 @@ $(document).ready(function () {
             dataType: "json",
             data: $(form).serialize(),
             url:
-              "https://script.google.com/macros/s/AKfycbxif2-XXrVtnMKFxfYeHn5Z4WUllYY-9UpqLNX6ciLu4QBzVrM1/exec",
+              "https://script.google.com/macros/s/AKfycbx6t0UZYrqn6qXAY5YXEuSmMaC3YrW5-Xby5dm_eo88tWMB7LaJ/exec",
             success: function () {
               $("#contactForm :input").attr("disabled", "disabled");
               $("#contactForm").addClass("d-none");
